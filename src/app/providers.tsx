@@ -4,7 +4,7 @@ import { ClerkProvider, useAuth } from '@clerk/nextjs'
 import { HeroUIProvider } from '@heroui/react'
 import { ToastProvider } from '@heroui/toast'
 import { CLERK_PUBLISHABLE_KEY, CONVEX_URL } from '@lib/constants/config.constants'
-import { ConvexReactClient } from 'convex/react';
+import { ConvexReactClient } from 'convex/react'
 import { ConvexProviderWithClerk } from 'convex/react-clerk'
 import { useRouter } from 'next/navigation'
 
@@ -15,7 +15,6 @@ declare module '@react-types/shared' {
   }
 }
 
-
 export function Providers({ children }: { children: React.ReactNode }) {
   if (!CLERK_PUBLISHABLE_KEY) {
     throw new Error('Clerk publishable key is not set')
@@ -25,7 +24,7 @@ export function Providers({ children }: { children: React.ReactNode }) {
     throw new Error('Convex URL is not set')
   }
 
-  const convex = new ConvexReactClient(CONVEX_URL);
+  const convex = new ConvexReactClient(CONVEX_URL)
   const router = useRouter()
 
   return (
