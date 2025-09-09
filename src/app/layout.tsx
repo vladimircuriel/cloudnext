@@ -28,7 +28,7 @@ export default function RootLayout({
       <body className={`${onest.variable} antialiased min-h-screen overflow-x-hidden`}>
         <Background>
           <Providers>
-            <div className="flex flex-col gap-y-20">
+            <div className="flex flex-col">
               <header>
                 <Navbar />
               </header>
