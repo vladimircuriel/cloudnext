@@ -1,7 +1,11 @@
 import type { Metadata } from 'next'
 import { Onest } from 'next/font/google'
-import '@/src/styles/globals.css'
 import { Providers } from './providers'
+import '@/src/styles/globals.css'
+
+import Background from '@components/background/Background'
+import Footer from '@components/navigation/footer/Footer'
+import Navbar from '@components/navigation/navbar/Navbar'
 
 const onest = Onest({
   subsets: ['latin'],
@@ -21,11 +25,20 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${onest.variable} antialiased flex flex-col min-h-screen`}>
-        <Providers>
-          <header></header>
-          <main className="flex-1">{children}</main>
-        </Providers>
+      <body className={`${onest.variable} antialiased min-h-screen overflow-x-hidden`}>
+        <Background>
+          <Providers>
+            <div className="flex flex-col gap-y-20">
+              <header>
+                <Navbar />
+              </header>
+              <main className="flex-1">{children}</main>
+              <footer>
+                <Footer />
+              </footer>
+            </div>
+          </Providers>
+        </Background>
       </body>
     </html>
   )
