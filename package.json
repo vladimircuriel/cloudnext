@@ -15,7 +15,7 @@
     "@clerk/nextjs": "6.31.10",
     "@hookform/resolvers": "^5.2.1",
     "@iconify/react": "^6.0.1",
-    "convex": "1.26.2",
+    "convex": "1.27.0",
     "framer-motion": "12.23.12",
     "next": "15.5.2",
     "postcss": "8.5.6",

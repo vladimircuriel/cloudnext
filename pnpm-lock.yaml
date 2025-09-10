@@ -21,8 +21,8 @@ importers:
         specifier: ^6.0.1
         version: 6.0.1(react@19.1.1)
       convex:
-        specifier: 1.26.2
-        version: 1.26.2(@clerk/clerk-react@5.46.2(react-dom@19.1.1(react@19.1.1))(react@19.1.1))(react@19.1.1)
+        specifier: 1.27.0
+        version: 1.27.0(@clerk/clerk-react@5.46.2(react-dom@19.1.1(react@19.1.1))(react@19.1.1))(react@19.1.1)
       framer-motion:
         specifier: 12.23.12
         version: 12.23.12(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
@@ -1737,8 +1737,8 @@ packages:
   compute-scroll-into-view@3.1.1:
     resolution: {integrity: sha512-VRhuHOLoKYOy4UbilLbUzbYg93XLjv2PncJC50EuTWPA3gaja1UjBsUP/D/9/juV3vQFr6XBEzn9KCAHdUvOHw==}
 
-  convex@1.26.2:
-    resolution: {integrity: sha512-QG3zvZ9GTTeeBS+N5PJj73TULHYu99eVSOI3KU2hMnB9q40fHxkMFJ+AYox+K81roTakciBvNTvGlhfz+M10fQ==}
+  convex@1.27.0:
+    resolution: {integrity: sha512-IHkqZX3GtY4nKFPTAR4mvWHHhDiQX9PM7EjpEv0pJWoMoq0On6oOL3iZ7Xz4Ls96dF7WJd4AjfitJsg2hUnLSQ==}
     engines: {node: '>=18.0.0', npm: '>=7.0.0'}
     hasBin: true
     peerDependencies:
@@ -4468,7 +4468,7 @@ snapshots:
 
   compute-scroll-into-view@3.1.1: {}
 
-  convex@1.26.2(@clerk/clerk-react@5.46.2(react-dom@19.1.1(react@19.1.1))(react@19.1.1))(react@19.1.1):
+  convex@1.27.0(@clerk/clerk-react@5.46.2(react-dom@19.1.1(react@19.1.1))(react@19.1.1))(react@19.1.1):
     dependencies:
       esbuild: 0.25.4
       jwt-decode: 4.0.0
