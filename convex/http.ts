@@ -52,7 +52,6 @@ http.route({
           break;
         }
         case "organizationMembership.updated": {
-          console.log(result.data.role);
           await context.runMutation(internal.users.updateRoleInOrgForUser, {
             tokenIdentifier: `https://${process.env.CLERK_HOSTNAME}|${result.data.public_user_data.user_id}`,
             orgId: result.data.organization.id,
