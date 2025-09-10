@@ -33,8 +33,6 @@ export default function FilesContainer({
 
   return (
     <>
-      {!files && <FileEmptyContainer title="You have no files, upload one now!" />}
-
       {files && (
         <div className="flex flex-col gap-y-8">
           {orgId && (
@@ -48,7 +46,13 @@ export default function FilesContainer({
           )}
 
           <FileTypeSelector type={type} setType={setType} />
-          {files.length === 0 && <FileEmptyContainer title="No file matched your query" />}
+
+          {files?.length === 0 && query === '' && (
+            <FileEmptyContainer title="You have no files, upload one now!" />
+          )}
+          {files.length === 0 && query !== '' && (
+            <FileEmptyContainer title="No file matched your query" />
+          )}
           {files.length > 0 && orgId && (
             <FilesTabs
               files={files}
