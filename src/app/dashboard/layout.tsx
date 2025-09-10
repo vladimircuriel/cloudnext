@@ -1,5 +1,5 @@
 import SideNav from '@components/navigation/sidenav/SideNav'
-import { Divider } from '@heroui/divider';
+import { Divider } from '@heroui/divider'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -21,7 +21,6 @@ export default function RootLayout({
         </div>
         <Divider orientation="vertical" />
       </section>
-
 
       <section className="flex-5">{children}</section>
     </div>

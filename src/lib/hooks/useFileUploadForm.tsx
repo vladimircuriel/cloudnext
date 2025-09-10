@@ -70,7 +70,7 @@ export function useFileUploadForm({
           title: 'File type not supported. Only images, documents and csv.',
           description: new Date().toLocaleString(),
           color: 'danger',
-        variant: 'flat',
+          variant: 'flat',
         })
       }
     } finally {
