@@ -11,7 +11,7 @@
     "biome": "biome check --write"
   },
   "dependencies": {
-    "@clerk/nextjs": "6.31.9",
+    "@clerk/nextjs": "6.31.10",
     "@heroui/react": "2.8.3",
     "@hookform/resolvers": "^5.2.1",
     "@iconify/react": "^6.0.1",
