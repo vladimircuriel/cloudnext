@@ -11,8 +11,8 @@
     "biome": "biome check --write"
   },
   "dependencies": {
+    "@heroui/react": "2.8.4",
     "@clerk/nextjs": "6.31.10",
-    "@heroui/react": "2.8.3",
     "@hookform/resolvers": "^5.2.1",
     "@iconify/react": "^6.0.1",
     "convex": "1.26.2",
