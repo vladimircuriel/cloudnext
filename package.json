@@ -14,7 +14,7 @@
     "@heroui/react": "2.8.4",
     "@clerk/nextjs": "6.31.10",
     "@hookform/resolvers": "^5.2.1",
-    "@iconify/react": "^6.0.1",
+    "@iconify/react": "^6.0.2",
     "convex": "1.27.0",
     "framer-motion": "12.23.12",
     "next": "15.5.2",
