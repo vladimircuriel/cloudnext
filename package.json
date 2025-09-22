@@ -13,7 +13,7 @@
   "dependencies": {
     "@heroui/react": "2.8.4",
     "@clerk/nextjs": "6.31.10",
-    "@hookform/resolvers": "^5.2.1",
+    "@hookform/resolvers": "^5.2.2",
     "@iconify/react": "^6.0.1",
     "convex": "1.27.0",
     "framer-motion": "12.23.12",
