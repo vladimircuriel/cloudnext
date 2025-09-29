@@ -16,7 +16,7 @@
     "@hookform/resolvers": "5.2.2",
     "@iconify/react": "6.0.2",
     "convex": "1.27.3",
-    "framer-motion": "12.23.19",
+    "framer-motion": "12.23.22",
     "next": "15.5.2",
     "postcss": "8.5.6",
     "react": "19.1.1",
