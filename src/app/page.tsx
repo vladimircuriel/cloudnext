@@ -1,8 +1,10 @@
+import { SignedIn, SignedOut, SignInButton } from '@clerk/nextjs'
 import RightIcon from '@components/icons/RightIcon'
 import { Button } from '@heroui/button'
 import { Image } from '@heroui/image'
 import { Link } from '@heroui/link'
 import { Spacer } from '@heroui/spacer'
+import { Authenticated } from 'convex/react'
 
 export default function Home() {
   return (
@@ -26,10 +28,19 @@ export default function Home() {
         </p>
 
         <Spacer y={5} />
+        <SignedIn>
+          <Button as={Link} href="/dashboard/files" color="primary" variant="shadow">
+            Get Started
+          </Button>
+        </SignedIn>
 
-        <Button as={Link} href="/dashboard/files" color="primary" variant="shadow">
-          Get Started
-        </Button>
+        <SignedOut>
+          <SignInButton>
+            <Button color="primary" variant="shadow">
+              Get An Account
+            </Button>
+          </SignInButton>
+        </SignedOut>
 
         <Spacer y={16} />
       </section>

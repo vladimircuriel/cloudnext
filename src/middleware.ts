@@ -11,9 +11,10 @@ export default clerkMiddleware(async (auth, request) => {
 
     const isAdmin = session.orgRole === 'admin' || session.orgRole === 'org:admin'
     if (!isAdmin) {
-      return NextResponse.redirect(new URL('/unauthorized', request.url))
+      return NextResponse.redirect(new URL('/', request.url))
     }
   }
+
   if (allFilesRoute(request)) {
     const session = await auth()
     if (!session.userId) {
